@@ -1,5 +1,11 @@
-from fastapi import FastApi
+from fastapi import FastAPI
 
 app = FastAPI()
 
-conn_string = "postgresql://cmordini:mastodon@localhost:7000/recipes"
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: str = None):
+    return {"item_id": item_id, "q": q}
