@@ -8,3 +8,5 @@ venv/
 backend/venv/
 .env
 .env.*
+
+load_test_data.sql
