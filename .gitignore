@@ -9,4 +9,8 @@ backend/venv/
 .env
 .env.*
 
-load_test_data.sql
+/db/users.csv
+/db/recipes.csv
+/db/sql/load_test_data.sql
+
+db/output
